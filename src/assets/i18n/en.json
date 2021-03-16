@@ -1,0 +1,18 @@
+{
+    "APP_NAME": "IdeArt",
+    "MENU": {
+        "TITLE": "Menu",
+        "OPTIONS": {
+            "STANDARD": "Standard inspiration",
+            "WHO_AND_WHAT": "Who and what?",
+            "MIX_STYLES": "A mix of styles",
+            "NEW_SUGGESTION": "New suggestion",
+            "IN_FUTURE": "The feature will be available in the future",
+            "IN_PROGESS": "Function in progress"
+        }
+    },
+    "LANGUAGES": {
+        "en": "En",
+        "pl": "Pl"
+    } 
+}
