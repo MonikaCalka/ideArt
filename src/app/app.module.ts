@@ -15,10 +15,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips'
 
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { StandardInspirationComponent } from './standard-inspiration/standard-inspiration.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -27,7 +33,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    StandardInspirationComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +50,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatListModule,
     MatTooltipModule,
     MatSelectModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -50,7 +62,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
         },
       defaultLanguage: 'en'
-    })
+    }),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,78 @@
+{
+    "categories": [
+        {
+            "id": 0,
+            "name": "CATEGORY.HUMAN",
+            "subcategories": [
+                {
+                    "idCategory": 0,
+                    "idSubCategory": 0,
+                    "name": "COMMON.RANDOM_SUBCATEGORY",
+                    "tag": "human",
+                    "collectionId": null,
+                    "active": true
+                },
+                {
+                    "idCategory": 0,
+                    "idSubCategory": 1,
+                    "name": "CATEGORY.HUMAN.WOMAN",
+                    "tag": "woman",
+                    "collectionId": "8476147",
+                    "active": true
+                },
+                {
+                    "idCategory": 0,
+                    "idSubCategory": 2,
+                    "name": "CATEGORY.HUMAN.MAN",
+                    "tag": "man",
+                    "collectionId": "1191843",
+                    "active": true
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "CATEGORY.ANIMAL",
+            "subcategories": [
+                {
+                    "idCategory": 1,
+                    "idSubCategory": 0,
+                    "name": "COMMON.RANDOM_SUBCATEGORY",
+                    "tag": "animal",
+                    "collectionId": null,
+                    "active": true
+                },
+                {
+                    "idCategory": 1,
+                    "idSubCategory": 1,
+                    "name": "CATEGORY.ANIMAL.CAT",
+                    "tag": "cat",
+                    "collectionId": "96878025",
+                    "active": true
+                },
+                {
+                    "idCategory": 1,
+                    "idSubCategory": 2,
+                    "name": "CATEGORY.ANIMAL.DOG",
+                    "tag": "dog",
+                    "collectionId": "42774580",
+                    "active": true
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "CATEGORY.VIEW",
+            "subcategories": [
+                {
+                    "idCategory": 2,
+                    "idSubCategory": 0,
+                    "name": "COMMON.RANDOM_SUBCATEGORY",
+                    "tag": "view",
+                    "collectionId": null,
+                    "active": true
+                }
+            ]
+        }
+    ]
+}

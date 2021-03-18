@@ -8,11 +8,43 @@
             "MIX_STYLES": "A mix of styles",
             "NEW_SUGGESTION": "New suggestion",
             "IN_FUTURE": "The feature will be available in the future",
-            "IN_PROGESS": "Function in progress"
+            "IN_PROGRESS": "Function in progress"
         }
     },
     "LANGUAGES": {
         "en": "En",
         "pl": "Pl"
-    } 
+    },
+    "COMMON": {
+        "GENERATE": "Generate",
+        "RANDOM_IMAGE": "Random image",
+        "RESULT": "Result",
+        "CATEGORY": "Category",
+        "SUBCATEGORY": "Subcategory",
+        "RANDOM_SUBCATEGORY": "Random subcategory"
+    },
+    "STANDARD_MODE": {
+        "SUB_TITLE": "Standard module - get inspired by what you see.",
+        "DESCRIPTION": "Choose the categories you are interested in. Based on them, the theme of your creative work will be generated. Draw, paint, sculpt!"
+    },
+    "PAGE_NOT_FOUND": {
+        "TITLE": "Page not found",
+        "DESCRIPTION": "Sorry, we can't find the page you are interested in."
+    },
+    "CATEGORY": {
+        "HUMAN": {
+            "TITLE": "Humans",
+            "WOMAN": "Women",
+            "MAN": "Men",
+            "KID": "Kids"
+        },
+        "ANIMAL": {
+            "TITLE": "Animals",
+            "CAT": "Cats",
+            "DOG": "Dogs"
+        },
+        "VIEW": {
+            "TITLE": "Views"
+        }
+    }
 }

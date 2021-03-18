@@ -1,0 +1,43 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>{{'MENU.OPTIONS.STANDARD' | translate}}</mat-card-title>
+      <mat-card-subtitle>{{'STANDARD_MODE.SUB_TITLE' | translate}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{'STANDARD_MODE.DESCRIPTION' | translate}}
+      </p>
+      <section>
+        <mat-checkbox [(ngModel)]="randomMode">{{'COMMON.RANDOM_IMAGE' | translate}}</mat-checkbox>
+      </section>
+
+      <mat-chip-list aria-label="Fish selection" multiple>
+        <mat-chip color="primary" *ngFor="let category of categoriesList" [disabled]="randomMode"
+          [selected]="category.state" (click)="category.state=!category.state;changeSelected(category)" >
+          <span>{{ category.name | translate }}</span>
+        </mat-chip>
+      </mat-chip-list>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="onGenerate()" [disabled]="!randomMode && selectedCategories.length == 0">{{'COMMON.GENERATE' | translate}}</button>
+    </mat-card-actions>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{'COMMON.RESULT' | translate}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <p>
+        {{('COMMON.CATEGORY' | translate) + ": " + (randomCategory != undefined && randomCategory.name != undefined ? (randomCategory.name | translate) : "")}}
+      </p>
+      <p>
+        {{('COMMON.SUBCATEGORY' | translate) + ": " + (randomSubcategory != undefined && randomSubcategory.name != undefined ? (randomSubcategory.name| translate) : "")}}
+      </p>
+    </div>
+    <div class="image-div">
+      <img [src]="resultImgSrc">
+    </div>
+  </mat-card-content>
+</mat-card>

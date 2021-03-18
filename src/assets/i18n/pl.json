@@ -14,5 +14,37 @@
     "LANGUAGES": {
         "en": "En",
         "pl": "Pl"
-    }   
+    },
+    "COMMON": {
+        "GENERATE": "Wygeneruj",
+        "RANDOM_IMAGE": "Losowy obraz",
+        "RESULT": "Wynik",
+        "CATEGORY": "Kategoria",
+        "SUBCATEGORY": "Podkategoria",
+        "RANDOM_SUBCATEGORY": "Losowa podkategoria"
+    },
+    "STANDARD_MODE": {
+        "SUB_TITLE": "Moduł standardowy - zainspiruj się tym co widzisz.",
+        "DESCRIPTION": "Wybierz interesujące Cię kategorie. Na ich postawie zostanie wygenerowany temat Twojej twórczej pracy. Rysuj, maluj, rzeźb!"
+    },
+    "PAGE_NOT_FOUND": {
+        "TITLE": "Nie odnaleziono strony",
+        "DESCRIPTION": "Przepraszamy, nie umiemy znaleźć interesującej Cię strony."
+    },
+    "CATEGORY": {
+        "HUMAN": {
+            "TITLE": "Ludzie",
+            "WOMAN": "Kobiety",
+            "MAN": "Mężczyźni",
+            "KID": "Dzieci"
+        },
+        "ANIMAL": {
+            "TITLE": "Zwierzęta",
+            "CAT": "Koty",
+            "DOG": "Psy"
+        },
+        "VIEW": {
+            "TITLE": "Widoki"
+        }
+    }
 }
