@@ -5,4 +5,5 @@ export interface Subcategory {
     tag: string;
     collectionId?: string;
     active: boolean;
+    state: boolean;
   }

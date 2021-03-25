@@ -21,7 +21,12 @@
         "RESULT": "Result",
         "CATEGORY": "Category",
         "SUBCATEGORY": "Subcategory",
-        "RANDOM_SUBCATEGORY": "Random subcategory"
+        "RANDOM_SUBCATEGORY": "Random",
+        "LIMIT_SUBCATEGORIES": "Limit subcategories",
+        "SUBCATEGORY_DIALOG_DESC": "Select the subcategories you are interested in, the selection of which can generate inspiration.",
+        "OK": "Ok",
+        "RANDOM_SUBCATEGORY_TIP": "Random subcategory - the image will be generated based on the general label: {{tag}}",
+        "CANCEL": "Cancel"
     },
     "STANDARD_MODE": {
         "SUB_TITLE": "Standard module - get inspired by what you see.",

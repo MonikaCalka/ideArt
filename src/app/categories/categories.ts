@@ -12,7 +12,8 @@ export const CATEGORIES: Category[] = [
                 "name": "COMMON.RANDOM_SUBCATEGORY",
                 "tag": "human",
                 "collectionId": undefined,
-                "active": true
+                "active": true,
+                "state": true
             },
             {
                 "idCategory": 0,
@@ -20,7 +21,8 @@ export const CATEGORIES: Category[] = [
                 "name": "CATEGORY.HUMAN.WOMAN",
                 "tag": "woman",
                 "collectionId": "21508598",
-                "active": true
+                "active": true,
+                "state": true
             },
             {
                 "idCategory": 0,
@@ -28,7 +30,8 @@ export const CATEGORIES: Category[] = [
                 "name": "CATEGORY.HUMAN.MAN",
                 "tag": "man",
                 "collectionId": "93931972",
-                "active": true
+                "active": true,
+                "state": true
             },
             {
                 "idCategory": 0,
@@ -36,7 +39,8 @@ export const CATEGORIES: Category[] = [
                 "name": "CATEGORY.HUMAN.KID",
                 "tag": "kid",
                 "collectionId": "51316515",
-                "active": true
+                "active": true,
+                "state": true
             }
         ]
     },
@@ -51,7 +55,8 @@ export const CATEGORIES: Category[] = [
                 "name": "COMMON.RANDOM_SUBCATEGORY",
                 "tag": "animal",
                 "collectionId": undefined,
-                "active": true
+                "active": true,
+                "state": true
             },
             {
                 "idCategory": 1,
@@ -59,7 +64,8 @@ export const CATEGORIES: Category[] = [
                 "name": "CATEGORY.ANIMAL.CAT",
                 "tag": "cat",
                 "collectionId": "96878025",
-                "active": true
+                "active": true,
+                "state": true
             },
             {
                 "idCategory": 1,
@@ -67,7 +73,8 @@ export const CATEGORIES: Category[] = [
                 "name": "CATEGORY.ANIMAL.DOG",
                 "tag": "dog",
                 "collectionId": "42774580",
-                "active": true
+                "active": true,
+                "state": true
             }
         ]
     },
@@ -82,7 +89,8 @@ export const CATEGORIES: Category[] = [
                 "name": "COMMON.RANDOM_SUBCATEGORY",
                 "tag": "view",
                 "collectionId": undefined,
-                "active": true
+                "active": true,
+                "state": true
             }
         ]
     }

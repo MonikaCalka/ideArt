@@ -21,7 +21,12 @@
         "RESULT": "Wynik",
         "CATEGORY": "Kategoria",
         "SUBCATEGORY": "Podkategoria",
-        "RANDOM_SUBCATEGORY": "Losowa podkategoria"
+        "RANDOM_SUBCATEGORY": "Losowa",
+        "LIMIT_SUBCATEGORIES": "Ogranicz podkategorie",
+        "SUBCATEGORY_DIALOG_DESC": "Wybierz interesujące Cię podkategorie, spośród których może zostać wygenerowana inspiracja.",
+        "OK": "Ok",
+        "RANDOM_SUBCATEGORY_TIP": "Losowa podkategoria - obraz zostanie wygenerowany na podstawie ogólnej etykiety: {{tag}}",
+        "CANCEL": "Anuluj"
     },
     "STANDARD_MODE": {
         "SUB_TITLE": "Moduł standardowy - zainspiruj się tym co widzisz.",

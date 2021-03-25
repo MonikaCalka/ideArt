@@ -18,6 +18,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips'
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
@@ -25,6 +27,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { StandardInspirationComponent } from './standard-inspiration/standard-inspiration.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
+import { SubcategoryDialogComponent } from './subcategory-dialog/subcategory-dialog.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -35,7 +38,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     NavbarComponent,
     StandardInspirationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SubcategoryDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +57,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatCardModule,
     MatCheckboxModule,
     MatChipsModule,
+    MatDialogModule,
+    MatGridListModule,
     
     HttpClientModule,
     TranslateModule.forRoot({

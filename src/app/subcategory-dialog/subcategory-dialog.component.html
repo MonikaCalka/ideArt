@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>{{'COMMON.SUBCATEGORY' | translate}}</h1>
+<div mat-dialog-content>
+    {{'COMMON.SUBCATEGORY_DIALOG_DESC' | translate}}
+
+    <div *ngFor="let category of categories" class="content-div">
+        <h3>{{ category.name | translate }}</h3>
+        <div>
+            <mat-chip-list aria-label="Category selection" multiple>
+                <mat-chip color="primary" *ngFor="let subcategory of category.subcategories" [selected]="subcategory.state"
+                    (click)="changeSelected(subcategory)"
+                   >
+                    <span>{{ subcategory.name | translate }}</span>
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+    </div>
+</div>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>{{'COMMON.CANCEL' | translate }}</button>
+    <button mat-button [mat-dialog-close]="categories" cdkFocusInitial>{{'COMMON.OK' | translate }}</button>
+</mat-dialog-actions>
