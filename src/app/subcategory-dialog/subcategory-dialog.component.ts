@@ -15,16 +15,9 @@ export class SubcategoryDialogComponent implements OnInit {
 
   constructor(public dialogRef: MatDialogRef<SubcategoryDialogComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {
     
-   // this.categories = [];
-  //  data.categoriesList.forEach((category: Category) => this.categories.push(Object.assign({}, category)));
   this.categories = JSON.parse(JSON.stringify( data.categoriesList ));
   this.categories.sort((a:Category, b: Category) => a.id - b.id);
     this.selectedSubcategories = [];
-    this.categories.forEach((category: { subcategories: Subcategory[]; }) => {
-      category.subcategories.forEach((subCategory: Subcategory) => {
-        this.selectedSubcategories.push(subCategory);
-      });      
-    });
   }
 
   ngOnInit(): void {
@@ -32,12 +25,6 @@ export class SubcategoryDialogComponent implements OnInit {
 
   changeSelected(subcategory: Subcategory) {
     subcategory.state=!subcategory.state;
-    const index = this.selectedSubcategories.indexOf(subcategory);
-    if (index >= 0) {
-      this.selectedSubcategories.splice(index, 1);
-    } else {
-      this.selectedSubcategories.push(subcategory);
-    }
   }
 
 }

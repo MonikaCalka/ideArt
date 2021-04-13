@@ -5,10 +5,12 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>{{ 'MENU.TITLE' | translate}}</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="/standard" matTooltip="Info about the action" matTooltip="{{ 'MENU.OPTIONS.IN_PROGRESS' | translate}}">{{ 'MENU.OPTIONS.STANDARD' | translate}}</a>
+      <a mat-list-item href="/standard" matTooltip="Info about the action">{{ 'MENU.OPTIONS.STANDARD' | translate}}</a>
       <a mat-list-item href="/who-and-what" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{ 'MENU.OPTIONS.WHO_AND_WHAT' | translate}}</a>
       <a mat-list-item href="/mix-styles" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{ 'MENU.OPTIONS.MIX_STYLES' | translate}}</a>
       <a mat-list-item href="/suggestion" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{ 'MENU.OPTIONS.NEW_SUGGESTION' | translate}}</a>
+      <a mat-list-item href="/license">{{ 'MENU.OPTIONS.LICENSE' | translate}}</a>
+      
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

@@ -28,6 +28,7 @@ import { StandardInspirationComponent } from './standard-inspiration/standard-in
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
 import { SubcategoryDialogComponent } from './subcategory-dialog/subcategory-dialog.component';
+import { LicenseInfoComponent } from './license-info/license-info.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -39,7 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     StandardInspirationComponent,
     PageNotFoundComponent,
-    SubcategoryDialogComponent
+    SubcategoryDialogComponent,
+    LicenseInfoComponent
   ],
   imports: [
     BrowserModule,

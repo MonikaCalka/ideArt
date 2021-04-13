@@ -8,7 +8,8 @@
             "MIX_STYLES": "Mix stylów",
             "NEW_SUGGESTION": "Nowa sugestia",
             "IN_FUTURE": "Funkcja będzie dostępna w przyszłości",
-            "IN_PROGRESS": "Funkcja w trakcie realizacji"
+            "IN_PROGRESS": "Funkcja w trakcie realizacji",
+            "LICENSE": "Licencja"
         }
     },
     "LANGUAGES": {
@@ -36,17 +37,32 @@
         "TITLE": "Nie odnaleziono strony",
         "DESCRIPTION": "Przepraszamy, nie umiemy znaleźć interesującej Cię strony."
     },
+    "LICENSE": {
+        "DESCRIPTION_PREFIX": "Aplikacja korzysta z zasobów strony ",
+        "DESCRIPTION_SUFFIX": ". Zdjęcia Unsplash są przeznaczone do swobodnego użytku.",
+        "ALLOW_1": "Wszystkie zdjęcia można pobrać i używać bezpłatnie;",
+        "ALLOW_2": "Dozwolone jest użycie w celu komercyjnym i niekomercyjnym;",
+        "ALLOW_3": "Żadne pozwolenie nie jest wymagane (chociaż uznanie autorstwa jest mile widziane).",
+        "NOT_PERMISSION": "Nie dozwolone jest:",
+        "NOT_ALLOW_1": "Sprzedawanie zdjęć bez znaczących ich modyfikacji;",
+        "NOT_ALLOW_2": "Kompilowanie zdjęć z Unsplash w celu odtworzenia podobnej lub konkurencyjnej usługi.",
+        "MORE_ON_SITE": "Więcej na temat licencji znajduje się na stronie: ",
+        "COLLECTION_ON_SITE_PREFIX": "Wszystkie obrazy przyporządkowane do kategorii (wyłączając kategorię losowa) znajdują się na stronie ",
+        "COLLECTION_ON_SITE_SUFFIX": ". Jeżeli chcesz, znajdziesz tam wszystkie informacje o autorach zdjęć."
+    },
     "CATEGORY": {
         "HUMAN": {
             "TITLE": "Ludzie",
             "WOMAN": "Kobiety",
             "MAN": "Mężczyźni",
-            "KID": "Dzieci"
+            "KID": "Dzieci",
+            "SENIOR": "Osoby starsze"
         },
         "ANIMAL": {
             "TITLE": "Zwierzęta",
             "CAT": "Koty",
-            "DOG": "Psy"
+            "DOG": "Psy",
+            "FOREST": "Zwierzęta leśne"
         },
         "VIEW": {
             "TITLE": "Widoki"

@@ -8,7 +8,8 @@
             "MIX_STYLES": "A mix of styles",
             "NEW_SUGGESTION": "New suggestion",
             "IN_FUTURE": "The feature will be available in the future",
-            "IN_PROGRESS": "Function in progress"
+            "IN_PROGRESS": "Function in progress",
+            "LICENSE": "License"
         }
     },
     "LANGUAGES": {
@@ -36,17 +37,32 @@
         "TITLE": "Page not found",
         "DESCRIPTION": "Sorry, we can't find the page you are interested in."
     },
+    "LICENSE": {
+        "DESCRIPTION_PREFIX": "The application uses the resources of the website ",
+        "DESCRIPTION_SUFFIX": ". Unsplash photos are for free use.",
+        "ALLOW_1": "All photos are free to download and use;",
+        "ALLOW_2": "Commercial and non-commercial use is allowed;",
+        "ALLOW_3": "No permission is required (although attribution is appreciated).",
+        "NOT_PERMISSION": "It is not allowed:",
+        "NOT_ALLOW_1": "Selling photos without significantly modifying them;",
+        "NOT_ALLOW_2": "Compiling photos from Unsplash to recreate a similar or competing service.",
+        "MORE_ON_SITE": "More about the license can be found on the page: ",
+        "COLLECTION_ON_SITE_PREFIX": "All images assigned to the category (excluding the random category) are on the page ",
+        "COLLECTION_ON_SITE_SUFFIX": ". You can find all the information about the authors of the photos there if you want."
+    },
     "CATEGORY": {
         "HUMAN": {
             "TITLE": "Humans",
             "WOMAN": "Women",
             "MAN": "Men",
-            "KID": "Kids"
+            "KID": "Kids",
+            "SENIOR": "Seniors"
         },
         "ANIMAL": {
             "TITLE": "Animals",
             "CAT": "Cats",
-            "DOG": "Dogs"
+            "DOG": "Dogs",
+            "FOREST": "Forest animals"
         },
         "VIEW": {
             "TITLE": "Views"
