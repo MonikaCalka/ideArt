@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -11,20 +11,20 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class NavbarComponent {
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
+  // isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  //   .pipe(
+  //     map(result => result.matches),
+  //     shareReplay()
+  //   );
 
-  languages : any;
-  onChangeLang : any;
-  selectedLang : any;
+  languages: any;
+  onChangeLang: any;
+  selectedLang: any;
 
   constructor(private breakpointObserver: BreakpointObserver, translate: TranslateService) {
     this.languages = translate.getLangs();
     this.selectedLang = translate.currentLang;
-    
+
 
     this.onChangeLang = function (data: any) {
       translate.use(data.value);

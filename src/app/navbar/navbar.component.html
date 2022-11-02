@@ -1,37 +1,32 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="'dialog'" [mode]="'side'" [opened]="false">
     <mat-toolbar>{{ 'MENU.TITLE' | translate}}</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="/standard" matTooltip="Info about the action">{{ 'MENU.OPTIONS.STANDARD' | translate}}</a>
-      <a mat-list-item href="/who-and-what" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{ 'MENU.OPTIONS.WHO_AND_WHAT' | translate}}</a>
-      <a mat-list-item href="/mix-styles" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{ 'MENU.OPTIONS.MIX_STYLES' | translate}}</a>
-      <a mat-list-item href="/suggestion" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{ 'MENU.OPTIONS.NEW_SUGGESTION' | translate}}</a>
+      <a mat-list-item href="/standard">{{ 'MENU.OPTIONS.STANDARD' | translate}}</a>
+      <a mat-list-item href="/who-and-what" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{
+        'MENU.OPTIONS.WHO_AND_WHAT' | translate}}</a>
+      <a mat-list-item href="/mix-styles" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{
+        'MENU.OPTIONS.MIX_STYLES' | translate}}</a>
+      <a mat-list-item href="/suggestion" matTooltip="{{ 'MENU.OPTIONS.IN_FUTURE' | translate}}">{{
+        'MENU.OPTIONS.NEW_SUGGESTION' | translate}}</a>
       <a mat-list-item href="/license">{{ 'MENU.OPTIONS.LICENSE' | translate}}</a>
-      
+
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>{{ 'APP_NAME' | translate }}</span>
+      <img src="/assets/images/ideart_logo.svg" width="100" height="100">
       <span class="spacer"></span>
       <div class="lang-div">
         <mat-icon>language</mat-icon>
-          <mat-select (selectionChange)="onChangeLang($event)" [(value)]="selectedLang">
-            <mat-option *ngFor="let language of languages" [value]="language" >
-              <span>{{ 'LANGUAGES.' + language | translate }}</span>
-            </mat-option>
-          </mat-select>
+        <mat-select (selectionChange)="onChangeLang($event)" [(value)]="selectedLang">
+          <mat-option *ngFor="let language of languages" [value]="language">
+            <span>{{ 'LANGUAGES.' + language | translate }}</span>
+          </mat-option>
+        </mat-select>
       </div>
     </mat-toolbar>
     <!-- Add Content Here -->

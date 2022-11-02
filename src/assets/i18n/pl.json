@@ -62,10 +62,17 @@
             "TITLE": "Zwierzęta",
             "CAT": "Koty",
             "DOG": "Psy",
-            "FOREST": "Zwierzęta leśne"
+            "FOREST": "Zwierzęta leśne",
+            "UNDER_WATER": "Pod wodą",
+            "BIRD": "Ptaki"
         },
         "VIEW": {
-            "TITLE": "Widoki"
+            "TITLE": "Widoki",
+            "MOUNTAIN": "Góry",
+            "CITY": "Miasto",
+            "WATER": "Woda",
+            "DESERT": "Pustynia",
+            "FOREST": "Las"
         }
     }
 }

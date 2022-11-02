@@ -14,9 +14,9 @@ export class SubcategoryDialogComponent implements OnInit {
   selectedSubcategories: Subcategory[];
 
   constructor(public dialogRef: MatDialogRef<SubcategoryDialogComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {
-    
-  this.categories = JSON.parse(JSON.stringify( data.categoriesList ));
-  this.categories.sort((a:Category, b: Category) => a.id - b.id);
+
+    this.categories = JSON.parse(JSON.stringify(data.categoriesList));
+    this.categories.sort((a: Category, b: Category) => a.id - b.id);
     this.selectedSubcategories = [];
   }
 
@@ -24,7 +24,7 @@ export class SubcategoryDialogComponent implements OnInit {
   }
 
   changeSelected(subcategory: Subcategory) {
-    subcategory.state=!subcategory.state;
+    subcategory.state = !subcategory.state;
   }
 
 }

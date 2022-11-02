@@ -3,14 +3,17 @@
     {{'COMMON.SUBCATEGORY_DIALOG_DESC' | translate}}
 
     <div *ngFor="let category of categories" class="content-div">
-        <h3>{{ category.name | translate }}</h3>
-        <div>
+        <div *ngIf="category.subcategories.length > 1">
+            <h3>{{ category.name | translate }}</h3>
             <mat-chip-list aria-label="Category selection" multiple>
-                <mat-chip color="primary" *ngFor="let subcategory of category.subcategories"
-                    [selected]="subcategory.state" (click)="changeSelected(subcategory)">
-                    <span>{{ subcategory.name | translate }}</span>
-                </mat-chip>
+                <div *ngFor="let subcategory of category.subcategories">
+                    <mat-chip color="primary" [selected]="subcategory.state" (click)="changeSelected(subcategory)"
+                        *ngIf="subcategory.collectionId">
+                        <span>{{ subcategory.name | translate }}</span>
+                    </mat-chip>
+                </div>
             </mat-chip-list>
+
         </div>
     </div>
 </div>

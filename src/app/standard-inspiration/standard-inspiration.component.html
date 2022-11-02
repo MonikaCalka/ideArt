@@ -1,28 +1,30 @@
 <mat-card>
-    <mat-card-header>
-      <mat-card-title>{{'MENU.OPTIONS.STANDARD' | translate}}</mat-card-title>
-      <mat-card-subtitle>{{'STANDARD_MODE.SUB_TITLE' | translate}}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p>
-        {{'STANDARD_MODE.DESCRIPTION' | translate}}
-      </p>
-      <section>
-        <mat-checkbox [(ngModel)]="randomMode">{{'COMMON.RANDOM_IMAGE' | translate}}</mat-checkbox>
-      </section>
+  <mat-card-header>
+    <mat-card-title>{{'MENU.OPTIONS.STANDARD' | translate}}</mat-card-title>
+    <mat-card-subtitle>{{'STANDARD_MODE.SUB_TITLE' | translate}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{'STANDARD_MODE.DESCRIPTION' | translate}}
+    </p>
+    <section class="checkbox-section">
+      <mat-checkbox [(ngModel)]="randomMode">{{'COMMON.RANDOM_IMAGE' | translate}}</mat-checkbox>
+    </section>
 
-      <mat-chip-list aria-label="Category selection" multiple>
-        <mat-chip color="primary" *ngFor="let category of categoriesList" [disabled]="randomMode"
-          [selected]="category.state" (click)="changeSelected(category)" >
-          <span>{{ category.name | translate }}</span>
-        </mat-chip>
-      </mat-chip-list>
-      
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="onOpenSubcategoriesDialog()" [disabled]="randomMode || selectedCategories.length == 0">{{'COMMON.LIMIT_SUBCATEGORIES' | translate}}</button>
-      <button mat-raised-button color="primary" (click)="onGenerate()" [disabled]="!randomMode && selectedCategories.length == 0">{{'COMMON.GENERATE' | translate}}</button>
-    </mat-card-actions>
+    <mat-chip-list aria-label="Category selection" multiple>
+      <mat-chip color="primary" *ngFor="let category of categoriesList" [disabled]="randomMode"
+        [selected]="category.state" (click)="changeSelected(category)">
+        <span>{{ category.name | translate }}</span>
+      </mat-chip>
+    </mat-chip-list>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onOpenSubcategoriesDialog()"
+      [disabled]="randomMode || selectedCategories.length == 0">{{'COMMON.LIMIT_SUBCATEGORIES' | translate}}</button>
+    <button mat-raised-button color="primary" (click)="onGenerate()"
+      [disabled]="!randomMode && selectedCategories.length == 0">{{'COMMON.GENERATE' | translate}}</button>
+  </mat-card-actions>
 </mat-card>
 
 <mat-card>
@@ -30,16 +32,18 @@
     <mat-card-title>{{'COMMON.RESULT' | translate}}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <div>
+    <div *ngIf="!randomMode">
       <p>
-        {{('COMMON.CATEGORY' | translate) + ": " + (randomCategory != undefined && randomCategory.name != undefined ? (randomCategory.name | translate) : "")}}
+        {{('COMMON.CATEGORY' | translate) + ": " + (randomCategory && randomCategory.name ?
+        (randomCategory.name | translate) : "")}}
       </p>
       <p>
-        {{('COMMON.SUBCATEGORY' | translate) + ": " + (randomSubcategory != undefined && randomSubcategory.name != undefined ? (randomSubcategory.name| translate) : "")}}
+        {{('COMMON.SUBCATEGORY' | translate) + ": " + (randomSubcategory && randomSubcategory.name ?
+        (randomSubcategory.name| translate) : "")}}
       </p>
     </div>
     <div class="image-div">
-      <img [src]="resultImgSrc">
+      <img [src]="photo ? photo.urls.raw : ''">
     </div>
   </mat-card-content>
 </mat-card>

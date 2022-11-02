@@ -62,10 +62,17 @@
             "TITLE": "Animals",
             "CAT": "Cats",
             "DOG": "Dogs",
-            "FOREST": "Forest animals"
+            "FOREST": "Forest animals",
+            "UNDER_WATER": "Under water",
+            "BIRD": "Bird"
         },
         "VIEW": {
-            "TITLE": "Views"
+            "TITLE": "Views",
+            "MOUNTAIN": "Mountain",
+            "CITY": "City",
+            "WATER": "Water",
+            "DESERT": "Desert",
+            "FOREST": "Forest"
         }
     }
 }
